@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gi&hi</title>
+</head>
+<body>
+    
+    <script>
+        function caracteres() {
+            
+            let nomes = [];
+
+            for (let i = 0; i < 5; i++) {
+                let nome = prompt('Digite os nomes: ')
+            nomes.push(nome)
+            }
+
+        document.write(nomes[0].length+ ", ")
+        document.write(nomes[1].length+ ", ")
+        document.write(nomes[2].length+ ", ")
+        document.write(nomes[3].length+ ", ")
+        document.write(nomes[4].length+ ", ")
+        }
+        
+        window.onload = caracteres;
+    
+    </script>
+
+</body>
+</html>

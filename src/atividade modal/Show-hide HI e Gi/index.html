@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gi & HI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <button onclick="window.dialog.showModal()" id="Modal">Abrir Modal</button>
+    <dialog id="dialog">
+        <h2>Formulário</h2>
+
+        <form>
+            <label for="Nome" id="Nome">Seu Nome: </label>
+            <input type="text" id="Nome" placeholder="Nome...">
+            <br>
+
+            <label for="Tel">Telefone: </label>
+            <input type="tel" id="Tel" name="Tel" placeholder="(xx) xxxxx-xxxx">
+            <br>
+
+            <label for="email">e-mail: </label>
+            <input type="email" id="e-mail" placeholder="xxxxxx@gmail.com">
+            <br>
+            
+            <label for="Genêro">Qual é seu genêro? </label>
+            <select name="Genêro" id="Genêro">
+                <option value="">Selecione...</option>
+                <option value="Maculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <br>
+            
+            <button type="submit" id="Submit">Enviar</button>
+        </form>
+
+    </dialog>
+
+
+</body>
+</html>

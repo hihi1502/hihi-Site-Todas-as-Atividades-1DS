@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GI&HI</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(123, 175, 227);
+            text-shadow: black 1px 1px 2px;
+        }
+        .resultado {
+            font-size: 1.5em;
+            text-align: center;
+            background-color: rgb(217, 231, 244);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!--5.	Crie 3 vetores com elementos diferentes e concatene-os. Exiba na página o resultado.-->
+
+    <h1> Hillary & Giovanna - ex 5 </h1>
+    <div id="resultado" class="resultado"></div>
+
+    <script>
+        const vetor1 = [];
+        const vetor2 = [];
+        const vetor3 = [];
+
+        for (let a = 0; a < 3; a++) {
+            const num = prompt("Digite um número");
+            vetor1.push(num);
+        }
+
+        for (let e = 0; e < 3; e++) {
+            const nom = prompt("Digite um nome");
+            vetor2.push(nom);
+        }
+
+        for (let i = 0; i < 3; i++) {
+            const col = prompt("Digite uma cor");
+            vetor3.push(col);
+        }
+
+        const todas = vetor1.concat(vetor2, vetor3);
+
+        document.getElementById('resultado').innerText = todas.join(", ");
+    </script>
+</body>
+</html>

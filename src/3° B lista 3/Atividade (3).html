@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi&Gi</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(123, 175, 227);
+            text-shadow: black 1px 1px 2px;
+        }
+        .resultado {
+            font-size: 1.5em;
+            text-align: center;
+            background-color: rgb(217, 231, 244);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!--3.	Receba 5 números e exiba-os em ordem decrescente.-->
+
+    <h1>Hillary & Giovanna - Ex 3 </h1>
+
+    <div id="resultado" class="resultado"></div>
+
+    <script> 
+    function ordem_decrescente() {
+        let number = [];
+
+        for (let i = 0; i < 5; i++) {
+        let numero = parseInt(prompt('Digite os números:'))
+        number.push(numero);        
+    }
+    let ordem = number.sort((a, b) => b - a);
+    document.getElementById('resultado').innerText = ordem;
+
+    }
+
+    window.onload = ordem_decrescente;
+    </script>
+</body>
+</html>

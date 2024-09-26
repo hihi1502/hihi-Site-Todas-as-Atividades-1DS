@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GI&HI</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(123, 175, 227);
+            text-shadow: black 1px 1px 2px;
+        }
+        .resultado {
+            font-size: 1.5em;
+            text-align: center;
+            background-color: rgb(217, 231, 244);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!--6. Receba 3 números em um vetor, se a soma exceder 100, deve-se exibir o maior valor, do contrário exibe-se o menor valor.-->
+
+    <h1>Hillary & Giovanna - Ex 6</h1>
+
+    <div id="resultado" class="resultado"></div>
+
+    <script>
+
+        const vetor1 = [];
+
+        for(let n = 0; n < 3; n++) {
+            const number = parseFloat(prompt("Digite um número"));
+            vetor1.push(number);
+        }
+
+        let soma = 0;
+
+        for (let s = 0; s < vetor1.length; s++) {
+            soma += vetor1[s];
+        }
+
+        if (soma > 100) {
+            const maiorValor = Math.max(...vetor1);
+            document.getElementById('resultado').innerText = `A soma é ${soma}. O maior valor é ${maiorValor}`;
+        } else {
+            const menorValor = Math.min(...vetor1);
+            document.getElementById('resultado').innerText = `A soma é ${soma}, o menor valor é ${menorValor}`;
+        }
+
+    </script>
+</body>
+</html>
+

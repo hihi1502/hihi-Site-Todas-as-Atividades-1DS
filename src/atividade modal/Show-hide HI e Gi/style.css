@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#Modal {
+    background-color: turquoise;
+    box-shadow: white 1px 1px 10px;
+    color: white;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-top: 25%;
+    padding: 10px 10px;
+}
+
+#dialog {
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#Nome {
+    margin-top: 10px;
+}
+
+#Tel {
+    margin-top: 10px;
+}
+
+#e-mail {
+    margin-top: 10px;
+}
+
+#Genêro {
+    margin-top: 10px;
+}
+
+#Submit {
+    margin-top: 10px;
+    background-color: cadetblue;
+    color: white;
+}
